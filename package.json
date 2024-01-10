@@ -1,0 +1,19 @@
+{
+  "name": "@wangminghua/postcss-prefix-selector",
+  "version": "0.0.1",
+  "description": "postcss-prefix-selector",
+  "main": "./dist/index.js",
+  "module": "./lib/index.js",
+  "scripts": {
+    "build": "npm run build-dist && npm run build-lib",
+    "build-dist": "rimraf -rf ./dist && npx tsc -p tsconfig.dist.json",
+    "build-lib": "rimraf -rf ./lib && npx tsc -p tsconfig.lib.json"
+  },
+  "author": "wangminghua",
+  "license": "MIT",
+  "devDependencies": {
+    "postcss": "^8.4.14",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  }
+}
